@@ -23,6 +23,13 @@
             #binding-cells = <0>;
             bindings = <&kp M>, <&kp RIGHT_BRACKET>;
         };
+
+        double_e: double_e {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DOUBLE_E";
+            #binding-cells = <0>;
+            bindings = <&kp T>, <&kp GRAVE>;
+        };
     };
 
     keymap {
@@ -36,7 +43,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC  &kp Q  &kp W  &kp E             &kp R             &kp T                 &kp Y        &kp U              &kp I            &kp O    &kp P          &double_bksp
+&kp ESC  &kp Q  &kp W  &kp E             &kp R             &double_e             &kp Y        &kp U              &kp I            &kp O    &kp P          &double_bksp
 &kp TAB  &kp A  &kp S  &mt LEFT_ALT D    &mt LEFT_SHIFT F  &mt LEFT_CONTROL G    &mt RCTRL H  &mt RIGHT_SHIFT J  &mt RIGHT_ALT K  &kp L    &kp SEMI       &kp SQT
 &mo 2    &kp Z  &kp X  &kp C             &kp V             &kp B                 &kp N        &double_m          &kp COMMA        &kp DOT  &kp KP_DIVIDE  &mo 2
                        &kp LS(LEFT_ALT)  &mo 4             &lt 3 SPACE           &kp RETURN   &mo 1              &kp LS(LALT)
