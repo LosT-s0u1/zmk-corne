@@ -32,6 +32,19 @@
         };
     };
 
+    macros {
+        w_amp: w_amp {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp RIGHT_ALT &kp NUMBER_3 &kp NUMBER_8>,
+                <&macro_release>;
+
+            label = "W_AMP";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -92,8 +105,8 @@
 
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans       &kp HOME            &kp UP_ARROW  &kp END              &kp PG_UP      &kp PRINTSCREEN  &kp BSPC
-&trans      &trans        &trans        &trans        &trans        &trans       &kp LEFT            &kp DOWN      &kp RIGHT            &kp PAGE_DOWN  &trans           &trans
-&kp LSHFT   &trans        &trans        &trans        &trans        &trans       &kp LC(LEFT_ARROW)  &trans        &kp LC(RIGHT_ARROW)  &trans         &trans           &trans
+&trans      &trans        &trans        &trans        &trans        &trans       &kp LEFT            &kp DOWN      &kp RIGHT            &kp PAGE_DOWN  &kp SCROLLLOCK   &trans
+&kp LSHFT   &trans        &trans        &trans        &trans        &trans       &kp LC(LEFT_ARROW)  &trans        &kp LC(RIGHT_ARROW)  &trans         &kp PAUSE_BREAK  &trans
                                         &kp LGUI      &trans        &kp SPACE    &kp LC(V)           &kp LC(C)     &kp LC(X)
             >;
         };
