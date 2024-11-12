@@ -37,9 +37,12 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp RIGHT_ALT>,
-                <&macro_tap &kp N0 &kp N3 &kp N8>,
-                <&macro_release &kp RIGHT_ALT>;
+                <&macro_press>,
+                <&kp RIGHT_ALT>,
+                <&macro_tap>,
+                <&kp NUMBER_0 &kp NUMBER_3 &kp NUMBER_8>,
+                <&macro_release>,
+                <&kp RIGHT_ALT>;
 
             label = "W_AMP";
         };
