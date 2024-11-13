@@ -118,8 +118,8 @@
                 <&macro_release &kp LEFT_ALT>;
                 <&macro_press &kp LALT>,
                 <&macro_tap &kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_5>,
-                <&macro_release &kp LEFT_ALT>;
-                <&macro_tap &kp &kp LEFT>,
+                <&macro_release &kp LEFT_ALT>,
+                <&macro_tap &kp &kp LEFT>;
             label = "W_DOUBLE_CURLY_BRACES";
         };
 
@@ -132,8 +132,8 @@
                 <&macro_release &kp LEFT_ALT>;
                 <&macro_press &kp LALT>,
                 <&macro_tap &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_3>,
-                <&macro_release &kp LEFT_ALT>;
-                <&macro_tap &kp &kp LEFT>,
+                <&macro_release &kp LEFT_ALT>,
+                <&macro_tap &kp &kp LEFT>;
             label = "W_DOUBLE_SQUARE_BRACES";
         };
 
@@ -146,8 +146,8 @@
                 <&macro_release &kp LEFT_ALT>;
                 <&macro_press &kp LALT>,
                 <&macro_tap &kp KP_NUMBER_0 &kp KP_NUMBER_4 &kp KP_NUMBER_1>,
-                <&macro_release &kp LEFT_ALT>;
-                <&macro_tap &kp &kp LEFT>,
+                <&macro_release &kp LEFT_ALT>,
+                <&macro_tap &kp &kp LEFT>;
             label = "W_DOUBLE_ROUND_BRACES";
         };
 
