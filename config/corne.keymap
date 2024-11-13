@@ -30,6 +30,13 @@
             #binding-cells = <0>;
             bindings = <&kp T>, <&kp GRAVE>;
         };
+
+        double_p: double_p {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DOUBLE_P";
+            #binding-cells = <0>;
+            bindings = <&kp P>, <&kp LEFT_BRACKET>;
+        };
     };
 
     macros {
