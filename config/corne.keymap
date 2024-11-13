@@ -292,7 +292,7 @@
 
         amp {
             bindings = <&w_amp>;
-            key-positions = <6 7>;
+            key-positions = <7 8>;
             layers = <0>;
         };
 
