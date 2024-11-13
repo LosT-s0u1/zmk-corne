@@ -364,6 +364,60 @@
         less_more {
             bindings = <&w_less_more>;
             key-positions = <33 34>;
+            layers = <0>;
+        };
+
+        double_round_braces {
+            bindings = <&w_double_round_braces>;
+            key-positions = <9 10>;
+            layers = <0>;
+        };
+
+        double_quotes {
+            bindings = <&w_double_quotes>;
+            key-positions = <1 2>;
+            layers = <0>;
+        };
+
+        amp {
+            bindings = <&w_amp>;
+            key-positions = <6 7>;
+            layers = <0>;
+        };
+
+        sharp {
+            bindings = <&w_sharp>;
+            key-positions = <2 3>;
+            layers = <0>;
+        };
+
+        pipe {
+            bindings = <&w_pipe>;
+            key-positions = <22 34>;
+            layers = <0>;
+        };
+
+        ctrl_shift_esc {
+            bindings = <&kp LS(LC(ESCAPE))>;
+            key-positions = <12 24>;
+            layers = <0>;
+        };
+
+        ctrl_alt_del {
+            bindings = <&kp LA(LC(DEL))>;
+            key-positions = <24 35>;
+        };
+
+        win_d {
+            bindings = <&kp LG(D)>;
+            key-positions = <13 25>;
+            layers = <0>;
+        };
+
+        win_r {
+            bindings = <&kp LG(R)>;
+            key-positions = <4 16>;
+            layers = <0>;
         };
     };
 
