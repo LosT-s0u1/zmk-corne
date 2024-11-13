@@ -36,27 +36,8 @@
             label = "DOUBLE_P";
             #binding-cells = <0>;
             bindings = <&kp P>, <&kp LEFT_BRACKET>;
-        };
 
-        duoble_quote: duoble_quote {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DUOBLE_QUOTE";
-            #binding-cells = <0>;
-            bindings = <&kp AT>, <&w_double_quotes>;
-        };
-
-        triple_less: triple_less {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TRIPLE_LESS";
-            #binding-cells = <0>;
-            bindings = <&kp LESS_THAN>, <&w_less_more>, <&w_less_equal>;
-        };
-
-        double_more: double_more {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DOUBLE_MORE";
-            #binding-cells = <0>;
-            bindings = <&kp GREATER_THAN>, <&w_less_equal>;
+            tapping-term-ms = <250>;
         };
     };
 
@@ -101,34 +82,6 @@
                 <&kp LEFT_ALT>;
 
             label = "W_PIPE";
-        };
-
-        w_brace_l: w_brace_l {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_3>,
-                <&macro_release>,
-                <&kp LEFT_ALT>;
-
-            label = "W_BRACE_L";
-        };
-
-        w_brace_r: w_brace_r {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_5>,
-                <&macro_release>,
-                <&kp LEFT_ALT>;
-
-            label = "W_BRACE_R";
         };
 
         w_double_curly_braces: w_double_curly_braces {
@@ -273,62 +226,6 @@
             label = "W_MORE_EQUAL";
         };
 
-        w_less: w_less {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_0 &kp KP_NUMBER_6 &kp KP_NUMBER_0>,
-                <&macro_release>,
-                <&kp LEFT_ALT>;
-
-            label = "W_LESS";
-        };
-
-        w_more: w_more {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_0 &kp KP_NUMBER_6 &kp KP_NUMBER_2>,
-                <&macro_release>,
-                <&kp LEFT_ALT>;
-
-            label = "W_MORE";
-        };
-
-        w_squre_brace_l: w_squre_brace_l {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_1>,
-                <&macro_release>,
-                <&kp LEFT_ALT>;
-
-            label = "W_SQUARE_BRACE_L";
-        };
-
-        w_squre_brace_r: w_squre_brace_r {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_3>,
-                <&macro_release>,
-                <&kp LEFT_ALT>;
-
-            label = "W_SQUARE_BRACE_R";
-        };
-
         w_sobaka: w_sobaka {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -461,10 +358,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB                 &kp EXCL                 &duoble_quote           &kp HASH       &kp DLLR       &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK     &kp LPAR      &kp RPAR  &kp DEL
-&w_amp                  &w_pipe                  &w_sobaka               &w_sharp       &w_dollar      &w_amp       &kp MINUS  &kp EQUAL  &kp LBKT      &kp RBKT      &kp BSLH  &kp GRAVE
-&w_double_curly_braces  &w_double_square_braces  &w_double_round_braces  &w_less_equal  &w_more_equal  &trans       &kp UNDER  &kp PLUS   &triple_less  &double_more  &kp PIPE  &kp TILDE
-                                                                         &kp LGUI       &trans         &kp SPACE    &kp RET    &trans     &trans
+&kp TAB                 &kp EXCL                 &kp AT_SIGN             &kp HASH      &kp DLLR       &kp PRCNT        &kp CARET  &kp AMPS   &kp ASTRK       &kp LPAR         &kp RPAR  &kp DEL
+&w_double_quotes        &w_pipe                  &w_sobaka               &w_sharp      &w_dollar      &w_amp           &kp MINUS  &kp EQUAL  &kp LBKT        &kp RBKT         &kp BSLH  &kp GRAVE
+&w_double_curly_braces  &w_double_square_braces  &w_double_round_braces  &w_less_more  &w_less_equal  &w_more_equal    &kp UNDER  &kp PLUS   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PIPE  &kp TILDE
+                                                                         &kp LGUI      &trans         &kp SPACE        &kp RET    &trans     &trans
             >;
         };
 
