@@ -330,6 +330,16 @@
             key-positions = <4 16>;
             layers = <0>;
         };
+
+        less_equal {
+            bindings = <&w_less_equal>;
+            key-positions = <31 32>;
+        };
+
+        more_equal {
+            bindings = <&w_more_equal>;
+            key-positions = <33 34>;
+        };
     };
 
     keymap {
