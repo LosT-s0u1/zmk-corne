@@ -37,6 +37,27 @@
             #binding-cells = <0>;
             bindings = <&kp P>, <&kp LEFT_BRACKET>;
         };
+
+        duoble_quote: duoble_quote {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DUOBLE_QUOTE";
+            #binding-cells = <0>;
+            bindings = <&kp AT>, <&w_double_quotes>;
+        };
+
+        triple_less: triple_less {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TRIPLE_LESS";
+            #binding-cells = <0>;
+            bindings = <&kp LESS_THAN>, <&w_less_more>, <&w_less_equal>;
+        };
+
+        double_more: double_more {
+            compatible = "zmk,behavior-tap-dance";
+            label = "DOUBLE_MORE";
+            #binding-cells = <0>;
+            bindings = <&kp GREATER_THAN>, <&w_less_equal>;
+        };
     };
 
     macros {
@@ -235,7 +256,6 @@
             label = "W_LESS_EQUAL";
         };
 
-
         w_more_equal: w_more_equal {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -338,6 +358,15 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        less_more {
+            bindings = <&w_less_more>;
+            key-positions = <33 34>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -364,10 +393,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB                 &kp EXCL  &kp AT     &kp HASH  &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp DEL
-&w_amp                  &w_pipe   &w_sobaka  &w_sharp  &w_dollar  &w_amp       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&w_double_curly_braces  &trans    &trans     &trans    &trans     &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                             &kp LGUI  &trans     &kp SPACE    &kp RET    &trans     &kp RALT
+&kp TAB                 &kp EXCL  &duoble_quote  &kp HASH  &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK     &kp LPAR  &kp RPAR  &kp DEL
+&w_amp                  &w_pipe   &w_sobaka      &w_sharp  &w_dollar  &w_amp       &kp MINUS  &kp EQUAL  &kp LBKT      &kp RBKT  &kp BSLH  &kp GRAVE
+&w_double_curly_braces  &trans    &trans         &trans    &trans     &trans       &kp UNDER  &kp PLUS   &triple_less  &kp RBRC  &kp PIPE  &kp TILDE
+                                                 &kp LGUI  &trans     &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
 
