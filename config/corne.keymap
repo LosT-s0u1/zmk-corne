@@ -109,6 +109,47 @@
 
             label = "W_BRACE_R";
         };
+        w_double_curly_braces: w_double_curly_braces {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_3>,
+                <&macro_release &kp LEFT_ALT>;
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_5>,
+                <&macro_release &kp LEFT_ALT>;
+                <&macro_tap &kp &kp LEFT>,
+            label = "W_DOUBLE_CURLY_BRACES";
+        };
+
+        w_double_square_braces: w_double_square_braces {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_1>,
+                <&macro_release &kp LEFT_ALT>;
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_3>,
+                <&macro_release &kp LEFT_ALT>;
+                <&macro_tap &kp &kp LEFT>,
+            label = "W_DOUBLE_SQUARE_BRACES";
+        };
+
+        w_double_round_braces: w_double_round_braces {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp KP_NUMBER_0 &kp KP_NUMBER_4 &kp KP_NUMBER_0>,
+                <&macro_release &kp LEFT_ALT>;
+                <&macro_press &kp LALT>,
+                <&macro_tap &kp KP_NUMBER_0 &kp KP_NUMBER_4 &kp KP_NUMBER_1>,
+                <&macro_release &kp LEFT_ALT>;
+                <&macro_tap &kp &kp LEFT>,
+            label = "W_DOUBLE_ROUND_BRACES";
+        };
 
         w_less: w_less {
             compatible = "zmk,behavior-macro";
