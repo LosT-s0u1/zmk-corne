@@ -109,17 +109,26 @@
 
             label = "W_BRACE_R";
         };
+
         w_double_curly_braces: w_double_curly_braces {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp LALT>,
-                <&macro_tap &kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_3>,
-                <&macro_release &kp LEFT_ALT>,
-                <&macro_press &kp LALT>,
-                <&macro_tap &kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_5>,
-                <&macro_release &kp LEFT_ALT>,
-                <&macro_tap &kp LEFT>;
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LEFT_ALT>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_5>,
+                <&macro_release>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp LEFT>;
+
             label = "W_DOUBLE_CURLY_BRACES";
         };
 
@@ -127,13 +136,21 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp LALT>,
-                <&macro_tap &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_1>,
-                <&macro_release &kp LEFT_ALT>,
-                <&macro_press &kp LALT>,
-                <&macro_tap &kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_3>,
-                <&macro_release &kp LEFT_ALT>,
-                <&macro_tap &kp LEFT>;
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_1>,
+                <&macro_release>,
+                <&kp LEFT_ALT>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_3>,
+                <&macro_release>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp LEFT>;
+
             label = "W_DOUBLE_SQUARE_BRACES";
         };
 
@@ -141,13 +158,21 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings =
-                <&macro_press &kp LALT>,
-                <&macro_tap &kp KP_NUMBER_0 &kp KP_NUMBER_4 &kp KP_NUMBER_0>,
-                <&macro_release &kp LEFT_ALT>,
-                <&macro_press &kp LALT>,
-                <&macro_tap &kp KP_NUMBER_0 &kp KP_NUMBER_4 &kp KP_NUMBER_1>,
-                <&macro_release &kp LEFT_ALT>,
-                <&macro_tap &kp LEFT>;
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_4 &kp KP_NUMBER_0>,
+                <&macro_release>,
+                <&kp LEFT_ALT>,
+                <&macro_press>,
+                <&kp LALT>,
+                <&macro_tap>,
+                <&kp KP_NUMBER_0 &kp KP_NUMBER_4 &kp KP_NUMBER_1>,
+                <&macro_release>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp LEFT>;
+
             label = "W_DOUBLE_ROUND_BRACES";
         };
 
@@ -262,10 +287,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB    &kp EXCL  &kp AT     &kp HASH  &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp DEL
-&w_amp     &w_pipe   &w_sobaka  &w_sharp  &w_dollar  &w_amp       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
-&kp LSHFT  &trans    &trans     &trans    &trans     &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
-                                &kp LGUI  &trans     &kp SPACE    &kp RET    &trans     &kp RALT
+&kp TAB                 &kp EXCL  &kp AT     &kp HASH  &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &kp DEL
+&w_amp                  &w_pipe   &w_sobaka  &w_sharp  &w_dollar  &w_amp       &kp MINUS  &kp EQUAL  &kp LBKT   &kp RBKT  &kp BSLH  &kp GRAVE
+&w_double_curly_braces  &trans    &trans     &trans    &trans     &trans       &kp UNDER  &kp PLUS   &kp LBRC   &kp RBRC  &kp PIPE  &kp TILDE
+                                             &kp LGUI  &trans     &kp SPACE    &kp RET    &trans     &kp RALT
             >;
         };
 
