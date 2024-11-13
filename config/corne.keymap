@@ -363,7 +363,7 @@
 
         less_more {
             bindings = <&w_less_more>;
-            key-positions = <33 34>;
+            key-positions = <33 32>;
             layers = <0>;
         };
 
@@ -398,7 +398,7 @@
         };
 
         ctrl_shift_esc {
-            bindings = <&kp LS(LC(ESCAPE))>;
+            bindings = <&kp LC(LS(ESCAPE))>;
             key-positions = <12 24>;
             layers = <0>;
         };
