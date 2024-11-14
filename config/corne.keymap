@@ -43,6 +43,26 @@
 
             tapping-term-ms = <250>;
         };
+
+        hrl: home_row_left {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOME_ROW_LEFT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            hold-trigger-key-positions = <39 40 41 30 31 32 33 34 35 23 22 21 20 19 18 6 7 8 10 9 11>;
+        };
+
+        hrr: home_row_right {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOME_ROW_RIGHT";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <180>;
+            hold-trigger-key-positions = <38 37 36 29 28 26 25 24 17 16 15 14 13 12 0 1 2 3 4 5 28 29 37 38 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38>;
+        };
     };
 
     macros {
@@ -357,10 +377,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC           &kp Q  &kp W  &kp E             &kp R             &double_e             &kp Y        &kp U              &kp I            &kp O    &double_p      &double_bksp
-&mt LEFT_WIN TAB  &kp A  &kp S  &mt LEFT_ALT D    &mt LEFT_SHIFT F  &mt LEFT_CONTROL G    &mt RCTRL H  &mt RIGHT_SHIFT J  &mt RIGHT_ALT K  &kp L    &kp SEMI       &kp SQT
-&mo 2             &kp Z  &kp X  &kp C             &kp V             &kp B                 &kp N        &double_m          &kp COMMA        &kp DOT  &kp KP_DIVIDE  &kp LEFT_WIN
-                                &kp LS(LEFT_ALT)  &mo 4             &lt 3 SPACE           &kp RETURN   &mo 1              &kp LS(LALT)
+&kp ESC           &kp Q  &kp W  &kp E             &kp R              &double_e              &kp Y         &kp U               &kp I             &kp O    &double_p      &double_bksp
+&mt LEFT_WIN TAB  &kp A  &kp S  &hrl LEFT_ALT D   &hrl LEFT_SHIFT F  &hrl LEFT_CONTROL G    &hrr RCTRL H  &hrr RIGHT_SHIFT J  &hrr RIGHT_ALT K  &kp L    &kp SEMI       &kp SQT
+&mo 2             &kp Z  &kp X  &kp C             &kp V              &kp B                  &kp N         &double_m           &kp COMMA         &kp DOT  &kp KP_DIVIDE  &kp LEFT_WIN
+                                &kp LS(LEFT_ALT)  &mo 4              &lt 3 SPACE            &kp RETURN    &mo 1               &kp LS(LALT)
             >;
         };
 
