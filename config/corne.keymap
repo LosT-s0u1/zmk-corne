@@ -19,29 +19,11 @@
             tapping-term-ms = <250>;
         };
 
-        double_m: double_m {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DOUBLE_M";
-            #binding-cells = <0>;
-            bindings = <&kp M>, <&kp RIGHT_BRACKET>;
-
-            tapping-term-ms = <250>;
-        };
-
         double_e: double_e {
             compatible = "zmk,behavior-tap-dance";
             label = "DOUBLE_E";
             #binding-cells = <0>;
             bindings = <&kp T>, <&kp GRAVE>;
-        };
-
-        double_p: double_p {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DOUBLE_P";
-            #binding-cells = <0>;
-            bindings = <&kp P>, <&kp LEFT_BRACKET>;
-
-            tapping-term-ms = <250>;
         };
 
         hrl: home_row_left {
@@ -383,11 +365,13 @@
         b_combo {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <31 19>;
+            layers = <0>;
         };
 
         h_combo {
             bindings = <&kp LEFT_BRACKET>;
             key-positions = <22 23>;
+            layers = <0>;
         };
     };
 
@@ -402,7 +386,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC           &kp Q  &kp W  &kp E             &kp R              &double_e              &kp Y         &kp U               &kp I             &kp O    &double_p      &double_bksp
+&kp ESC           &kp Q  &kp W  &kp E             &kp R              &double_e              &kp Y         &kp U               &kp I             &kp O    &kp P          &double_bksp
 &mt LEFT_WIN TAB  &kp A  &kp S  &hrl LEFT_ALT D   &hrl LEFT_SHIFT F  &hrl LEFT_CONTROL G    &hrr RCTRL H  &hrr RIGHT_SHIFT J  &hrr RIGHT_ALT K  &kp L    &kp SEMI       &kp SQT
 &mo 2             &kp Z  &kp X  &kp C             &kp V              &kp B                  &kp N         &kp M               &kp COMMA         &kp DOT  &kp KP_DIVIDE  &kp LEFT_WIN
                                 &kp LS(LEFT_ALT)  &mo 4              &lt 3 SPACE            &kp RETURN    &mo 1               &kp LS(LALT)
