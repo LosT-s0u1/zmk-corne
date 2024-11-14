@@ -376,7 +376,8 @@
 
         ee_combo {
             bindings = <&kp GRAVE>;
-            key-positions = <5 17>;
+            key-positions = <5 4>;
+            layers = <0>;
         };
     };
 
