@@ -364,6 +364,21 @@
             bindings = <&w_more_equal>;
             key-positions = <33 34>;
         };
+
+        ctrl_c {
+            bindings = <&kp LC(C)>;
+            key-positions = <5 17>;
+        };
+
+        Ctrl_v {
+            bindings = <&kp LC(V)>;
+            key-positions = <17 29>;
+        };
+
+        Ctrl_x {
+            bindings = <&kp LC(X)>;
+            key-positions = <29 28>;
+        };
     };
 
     keymap {
@@ -401,9 +416,9 @@
 
         Digits_layer {
             bindings = <
-&trans  &trans  &trans  &kp N7  &kp N8  &kp N9    &kp N7  &kp N8           &kp N9  &kp KP_MINUS  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp N4  &kp N5           &kp N6  &kp KP_PLUS   &trans  &trans
-&trans  &trans  &trans  &kp N1  &kp N2  &kp N3    &kp N1  &kp N2           &kp N3  &w_dot        &trans  &trans
+&trans  &trans  &trans  &kp N7  &kp N8  &kp N9    &kp N7  &kp N8           &kp N9  &kp KP_MINUS  &kp ASTERISK  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp N4  &kp N5           &kp N6  &kp KP_PLUS   &kp KP_SLASH  &trans
+&trans  &trans  &trans  &kp N1  &kp N2  &kp N3    &kp N1  &kp N2           &kp N3  &w_dot        &trans        &trans
                         &trans  &trans  &trans    &trans  &kp KP_NUMBER_0  &trans
             >;
         };
@@ -426,7 +441,7 @@
 
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &trans       &kp HOME            &kp UP_ARROW  &kp END              &kp PG_UP      &kp PRINTSCREEN  &kp DELETE
-&trans      &trans        &trans        &trans        &trans        &trans       &kp LEFT            &kp DOWN      &kp RIGHT            &kp PAGE_DOWN  &kp SCROLLLOCK   &trans
+&trans      &trans        &trans        &trans        &trans        &trans       &kp LEFT            &kp DOWN      &kp RIGHT            &kp PAGE_DOWN  &kp SCROLLLOCK   &kp KP_NUMLOCK
 &kp LSHFT   &trans        &trans        &trans        &trans        &trans       &kp LC(LEFT_ARROW)  &trans        &kp LC(RIGHT_ARROW)  &trans         &kp PAUSE_BREAK  &trans
                                         &kp LGUI      &trans        &kp SPACE    &kp LC(V)           &kp LC(C)     &kp LC(X)
             >;
