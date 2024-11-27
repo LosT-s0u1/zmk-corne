@@ -392,10 +392,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC           &kp Q  &kp W            &kp E                &kp R              &double_e      &kp Y       &kp U               &kp I                 &kp O             &kp P          &double_bksp
-&mt LEFT_WIN TAB  &kp A  &hrl LEFT_ALT S  &hrl LEFT_CONTROL D  &hrl LEFT_SHIFT F  &kp G          &kp H       &hrr RIGHT_SHIFT J  &hrr RIGHT_CONTROL K  &hrr RIGHT_ALT L  &kp SEMI       &kp SQT
-&lt 2 LS(FSLH)    &kp Z  &kp X            &kp C                &kp V              &kp B          &kp N       &kp M               &kp COMMA             &kp DOT           &kp KP_DIVIDE  &kp SLASH
-                                          &kp LS(LEFT_ALT)     &mo 4              &lt 3 SPACE    &kp RETURN  &mo 1               &kp LS(LALT)
+&kp ESC           &kp Q  &kp W  &kp E             &kp R              &double_e              &kp Y                 &kp U               &kp I             &kp O    &kp P          &double_bksp
+&mt LEFT_WIN TAB  &kp A  &kp S  &hrl LEFT_ALT D   &hrl LEFT_SHIFT F  &hrl LEFT_CONTROL G    &hrr RIGHT_CONTROL H  &hrr RIGHT_SHIFT J  &hrr RIGHT_ALT K  &kp L    &kp SEMI       &kp SQT
+&lt 2 LS(FSLH)    &kp Z  &kp X  &kp C             &kp V              &kp B                  &kp N                 &kp M               &kp COMMA         &kp DOT  &kp KP_DIVIDE  &kp SLASH
+                                &kp LS(LEFT_ALT)  &mo 4              &lt 3 SPACE            &kp RETURN            &mo 1               &kp LS(LALT)
             >;
         };
 
