@@ -19,13 +19,6 @@
             tapping-term-ms = <250>;
         };
 
-        double_e: double_e {
-            compatible = "zmk,behavior-tap-dance";
-            label = "DOUBLE_E";
-            #binding-cells = <0>;
-            bindings = <&kp T>, <&kp GRAVE>;
-        };
-
         hrl: home_row_left {
             compatible = "zmk,behavior-hold-tap";
             label = "HOME_ROW_LEFT";
@@ -379,7 +372,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp ESC           &kp Q  &kp W  &kp E             &kp R              &double_e              &kp Y                 &kp U               &kp I             &kp O    &kp P          &double_bksp
+&kp ESC           &kp Q  &kp W  &kp E             &kp R              &kp T                  &kp Y                 &kp U               &kp I             &kp O    &kp P          &double_bksp
 &mt LEFT_WIN TAB  &kp A  &kp S  &hrl LEFT_ALT D   &hrl LEFT_SHIFT F  &hrl LEFT_CONTROL G    &hrr RIGHT_CONTROL H  &hrr RIGHT_SHIFT J  &hrr RIGHT_ALT K  &kp L    &kp SEMI       &kp SQT
 &lt 2 LS(FSLH)    &kp Z  &kp X  &kp C             &kp V              &kp B                  &kp N                 &kp M               &kp COMMA         &kp DOT  &kp KP_DIVIDE  &kp SLASH
                                 &kp LS(LEFT_ALT)  &mo 4              &lt 3 SPACE            &kp RETURN            &mo 1               &kp LS(LALT)
@@ -428,7 +421,7 @@
 
             bindings = <
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &kp LC(C)    &kp HOME            &kp UP_ARROW  &kp END              &kp PG_UP      &kp PRINTSCREEN  &kp DELETE
-&trans      &trans        &trans        &trans        &kp LC(S)     &kp LC(V)    &kp LEFT            &kp DOWN      &kp RIGHT            &kp PAGE_DOWN  &kp SCROLLLOCK   &kp KP_NUMLOCK
+&trans      &trans        &trans        &trans        &trans        &trans       &kp LEFT            &kp DOWN      &kp RIGHT            &kp PAGE_DOWN  &kp SCROLLLOCK   &kp KP_NUMLOCK
 &kp LSHFT   &trans        &trans        &trans        &trans        &kp LC(X)    &kp LC(LEFT_ARROW)  &trans        &kp LC(RIGHT_ARROW)  &trans         &kp PAUSE_BREAK  &trans
                                         &kp LGUI      &trans        &kp SPACE    &kp LC(V)           &kp LC(C)     &kp LC(X)
             >;
