@@ -332,16 +332,6 @@
             layers = <0>;
         };
 
-        less_equal {
-            bindings = <&w_less_equal>;
-            key-positions = <31 32>;
-        };
-
-        more_equal {
-            bindings = <&w_more_equal>;
-            key-positions = <33 34>;
-        };
-
         b_combo {
             bindings = <&kp RIGHT_BRACKET>;
             key-positions = <31 19>;
@@ -396,10 +386,10 @@
 
         Digits_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &kp LC(C)    &kp N7  &kp N8        &kp N9  &kp KP_MINUS  &kp ASTERISK  &trans
-&trans  &trans  &trans  &trans  &trans  &kp LC(V)    &kp N4  &kp N5        &kp N6  &kp KP_PLUS   &kp KP_SLASH  &trans
-&trans  &trans  &trans  &trans  &trans  &kp LC(X)    &kp N1  &kp N2        &kp N3  &kp KP_DOT    &trans        &trans
-                        &trans  &trans  &trans       &trans  &kp NUMBER_0  &trans
+&trans  &trans  &trans  &trans  &kp LC(Z)  &kp LC(C)    &kp N7  &kp N8        &kp N9  &kp KP_MINUS  &kp ASTERISK  &trans
+&trans  &trans  &trans  &trans  &kp LC(F)  &kp LC(V)    &kp N4  &kp N5        &kp N6  &kp KP_PLUS   &kp KP_SLASH  &trans
+&trans  &trans  &trans  &trans  &kp LC(H)  &kp LC(X)    &kp N1  &kp N2        &kp N3  &kp KP_DOT    &trans        &trans
+                        &trans  &trans     &trans       &trans  &kp NUMBER_0  &trans
             >;
         };
 
