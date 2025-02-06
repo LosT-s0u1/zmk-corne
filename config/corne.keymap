@@ -338,21 +338,10 @@
             layers = <0>;
         };
 
-        h_combo {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <21 20>;
-            layers = <0>;
-        };
-
         ee_combo {
             bindings = <&kp GRAVE>;
             key-positions = <5 4>;
             layers = <0>;
-        };
-
-        h_combo_ {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <21 22>;
         };
     };
 
