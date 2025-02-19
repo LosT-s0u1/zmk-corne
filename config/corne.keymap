@@ -27,7 +27,6 @@
 
             #binding-cells = <2>;
             tapping-term-ms = <260>;
-            hold-trigger-key-positions = <39 40 41 30 31 32 33 34 35 23 22 21 20 19 18 6 7 8 10 9 11>;
             flavor = "balanced";
         };
 
