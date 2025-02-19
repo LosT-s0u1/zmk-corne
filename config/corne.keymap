@@ -269,6 +269,13 @@
 
             label = "W_DOT";
         };
+
+        m_iy: m_iy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp Q>;
+            label = "M_IY";
+        };
     };
 
     combos {
@@ -343,6 +350,11 @@
             bindings = <&kp GRAVE>;
             key-positions = <5 4>;
             layers = <0>;
+        };
+
+        iy_combo {
+            bindings = <&m_iy>;
+            key-positions = <14 13>;
         };
     };
 
