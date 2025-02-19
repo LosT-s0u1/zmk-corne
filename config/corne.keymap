@@ -269,29 +269,10 @@
 
             label = "W_DOT";
         };
-
-        m_iy: m_iy {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp S &kp Q>;
-            label = "M_IY";
-        };
     };
 
     combos {
         compatible = "zmk,combos";
-
-        less_more {
-            bindings = <&w_less_more>;
-            key-positions = <33 32>;
-            layers = <0>;
-        };
-
-        double_round_braces {
-            bindings = <&w_double_round_braces>;
-            key-positions = <9 10>;
-            layers = <0>;
-        };
 
         double_quotes {
             bindings = <&w_double_quotes>;
@@ -351,11 +332,6 @@
             key-positions = <5 4>;
             layers = <0>;
         };
-
-        iy_combo {
-            bindings = <&m_iy>;
-            key-positions = <14 13>;
-        };
     };
 
     keymap {
@@ -393,10 +369,10 @@
 
         Digits_layer {
             bindings = <
-&trans  &trans  &trans  &trans  &kp LC(Z)  &kp LC(C)    &kp N7  &kp N8        &kp N9  &kp KP_MINUS  &kp ASTERISK  &kp DEL
-&trans  &trans  &trans  &trans  &kp LC(F)  &kp LC(V)    &kp N4  &kp N5        &kp N6  &kp KP_PLUS   &kp KP_SLASH  &trans
-&trans  &trans  &trans  &trans  &kp LC(H)  &kp LC(X)    &kp N1  &kp N2        &kp N3  &kp KP_DOT    &trans        &trans
-                        &trans  &trans     &trans       &trans  &kp NUMBER_0  &trans
+&trans  &trans  &trans     &trans  &kp LC(Z)  &kp LC(C)    &kp N7  &kp N8        &kp N9  &kp KP_MINUS  &kp ASTERISK  &kp DEL
+&trans  &trans  &kp LC(S)  &trans  &kp LC(F)  &kp LC(V)    &kp N4  &kp N5        &kp N6  &kp KP_PLUS   &kp KP_SLASH  &trans
+&trans  &trans  &trans     &trans  &kp LC(H)  &kp LC(X)    &kp N1  &kp N2        &kp N3  &kp KP_DOT    &trans        &trans
+                           &trans  &trans     &trans       &trans  &kp NUMBER_0  &trans
             >;
         };
 
