@@ -85,148 +85,6 @@
             label = "W_PIPE";
         };
 
-        w_double_curly_braces: w_double_curly_braces {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_3>,
-                <&macro_release>,
-                <&kp LEFT_ALT>,
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_1 &kp KP_NUMBER_2 &kp KP_NUMBER_5>,
-                <&macro_release>,
-                <&kp LEFT_ALT>,
-                <&macro_tap>,
-                <&kp LEFT>;
-
-            label = "W_DOUBLE_CURLY_BRACES";
-        };
-
-        w_double_square_braces: w_double_square_braces {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_1>,
-                <&macro_release>,
-                <&kp LEFT_ALT>,
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_0 &kp KP_NUMBER_9 &kp KP_NUMBER_3>,
-                <&macro_release>,
-                <&kp LEFT_ALT>,
-                <&macro_tap>,
-                <&kp LEFT>;
-
-            label = "W_DOUBLE_SQUARE_BRACES";
-        };
-
-        w_double_round_braces: w_double_round_braces {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_0 &kp KP_NUMBER_4 &kp KP_NUMBER_0>,
-                <&macro_release>,
-                <&kp LEFT_ALT>,
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_0 &kp KP_NUMBER_4 &kp KP_NUMBER_1>,
-                <&macro_release>,
-                <&kp LEFT_ALT>,
-                <&macro_tap>,
-                <&kp LEFT>;
-
-            label = "W_DOUBLE_ROUND_BRACES";
-        };
-
-        w_double_quotes: w_double_quotes {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_0 &kp KP_NUMBER_3 &kp KP_NUMBER_4>,
-                <&macro_release>,
-                <&kp LEFT_ALT>,
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_0 &kp KP_NUMBER_3 &kp KP_NUMBER_4>,
-                <&macro_release>,
-                <&kp LEFT_ALT>,
-                <&macro_tap>,
-                <&kp LEFT>;
-
-            label = "W_DOUBLE_QUOTES";
-        };
-
-        w_less_more: w_less_more {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_0 &kp KP_NUMBER_6 &kp KP_NUMBER_0>,
-                <&macro_release>,
-                <&kp LEFT_ALT>,
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_0 &kp KP_NUMBER_6 &kp KP_NUMBER_2>,
-                <&macro_release>,
-                <&kp LEFT_ALT>;
-
-            label = "W_LESS_MORE";
-        };
-
-        w_less_equal: w_less_equal {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_0 &kp KP_NUMBER_6 &kp KP_NUMBER_0>,
-                <&macro_release>,
-                <&kp LEFT_ALT>,
-                <&macro_tap>,
-                <&kp EQUAL>,
-                <&macro_release>;
-
-            label = "W_LESS_EQUAL";
-        };
-
-        w_more_equal: w_more_equal {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&macro_press>,
-                <&kp LALT>,
-                <&macro_tap>,
-                <&kp KP_NUMBER_0 &kp KP_NUMBER_6 &kp KP_NUMBER_2>,
-                <&macro_release>,
-                <&kp LEFT_ALT>,
-                <&macro_tap>,
-                <&kp EQUAL>,
-                <&macro_release>;
-
-            label = "W_MORE_EQUAL";
-        };
-
         w_sobaka: w_sobaka {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -272,12 +130,6 @@
 
     combos {
         compatible = "zmk,combos";
-
-        double_quotes {
-            bindings = <&w_double_quotes>;
-            key-positions = <1 2>;
-            layers = <0>;
-        };
 
         amp {
             bindings = <&w_amp>;
@@ -359,10 +211,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&kp TAB                 &kp EXCL                 &kp AT_SIGN             &kp HASH      &kp DLLR       &kp PRCNT        &kp CARET  &kp AMPS   &kp ASTRK       &kp LPAR         &kp RPAR  &kp DEL
-&w_double_quotes        &w_pipe                  &w_sobaka               &w_sharp      &w_dollar      &w_amp           &kp MINUS  &kp EQUAL  &kp LBKT        &kp RBKT         &kp BSLH  &kp GRAVE
-&w_double_curly_braces  &w_double_square_braces  &w_double_round_braces  &w_less_more  &w_less_equal  &w_more_equal    &kp UNDER  &kp PLUS   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PIPE  &kp TILDE
-                                                                         &kp LGUI      &trans         &kp SPACE        &kp RET    &trans     &trans
+&kp TAB  &kp EXCL  &kp AT_SIGN  &kp HASH  &kp DLLR   &kp PRCNT    &kp CARET  &kp AMPS   &kp ASTRK       &kp LPAR         &kp RPAR  &kp DEL
+&none    &w_pipe   &w_sobaka    &w_sharp  &w_dollar  &w_amp       &kp MINUS  &kp EQUAL  &kp LBKT        &kp RBKT         &kp BSLH  &kp GRAVE
+&none    &none     &none        &none     &none      &none        &kp UNDER  &kp PLUS   &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PIPE  &kp TILDE
+                                &kp LGUI  &trans     &kp SPACE    &kp RET    &trans     &trans
             >;
         };
 
